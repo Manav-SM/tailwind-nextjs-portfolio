@@ -1,6 +1,7 @@
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSeo } from '@/components/SEO'
+import Link from '@/components/Link'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
@@ -33,7 +34,45 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="twitter" href={twitter} />
             </div>
           </div>
-          <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">{children}</div>
+          <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+            {children}
+            Check out my{' '}
+            <Link
+              href="static/documents/cv.pdf"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label={`Read Resume`}
+            >
+              resume &rarr;
+            </Link>
+            <br />
+            Check out the{' '}
+            <Link
+              href="/blog/tools-i-use"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label={`To Tools`}
+            >
+              tools &rarr;
+            </Link>{' '}
+            I use daily
+            <br />
+            Check out my{' '}
+            <Link
+              href="/projects"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label={`To Tools`}
+            >
+              projects &rarr;
+            </Link>
+            <br />
+            Check out my{' '}
+            <Link
+              href="/blog"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label={`To Tools`}
+            >
+              blog &rarr;
+            </Link>
+          </div>
         </div>
       </div>
     </>
