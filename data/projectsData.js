@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'All Projects',
+    description: `List of my projects on this site`,
+    imgSrc: '/static/images/time-machine.jpg',
+    href: '/tags/project',
+  },
+  {
     title: 'A Search Engine',
     description: `What if you could look up any information in the world? Webpages, images, videos
     and more. Google has many features to help you find exactly what you're looking
