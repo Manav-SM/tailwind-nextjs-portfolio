@@ -17,6 +17,13 @@ const MobileNav = () => {
     })
   }
 
+  const mobheaderNavLinks = [
+    { href: '/about', title: 'About' },
+    { href: '/blog', title: 'Blog' },
+    { href: '/projects', title: 'Projects' },
+    { href: '/blog/tools-i-use', title: 'Uses' },
+  ]
+
   return (
     <div className="sm:hidden">
       <button
@@ -58,7 +65,7 @@ const MobileNav = () => {
           onClick={onToggleNav}
         ></button>
         <nav className="fixed h-full mt-8">
-          {headerNavLinks.map((link) => (
+          {mobheaderNavLinks.map((link) => (
             <div key={link.title} className="px-12 py-4">
               <Link
                 href={link.href}
