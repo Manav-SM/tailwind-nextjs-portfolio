@@ -1,6 +1,7 @@
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSeo } from '@/components/SEO'
+import Timeline from '@/components/Timeline'
 import Link from '@/components/Link'
 
 export default function AuthorLayout({ children, frontMatter }) {
@@ -75,6 +76,7 @@ export default function AuthorLayout({ children, frontMatter }) {
           </div>
         </div>
       </div>
+      <Timeline />
     </>
   )
 }
