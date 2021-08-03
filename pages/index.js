@@ -23,7 +23,6 @@ export default function Home({ posts }) {
         <h2 className="font-extrabold sm:text-2xl md:text-2xl">Hi There!</h2>
         <p className="text-2xl font-extrabold text-lg leading-7 text-gray-500 dark:text-gray-400 ">
           <br />
-          <br />
           Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Vel elit
           scelerisque mauris
           <Link
@@ -81,29 +80,30 @@ export default function Home({ posts }) {
         <div>
           <div className="pt-6 pb-8 space-y-2 md:space-y-5">
             <h2 className="font-extrabold sm:text-2xl md:text-2xl">Latest Projects</h2>
-          </div>
-          <div className="container py-12">
-            <div className="flex flex-wrap -m-4">
-              {projectsData.slice(0, MAX_DISPLAY).map((d) => (
-                <Card
-                  key={d.title}
-                  title={d.title}
-                  description={d.description}
-                  imgSrc={d.imgSrc}
-                  href={d.href}
-                />
-              ))}
+
+            <div className="container py-12">
+              <div className="flex flex-wrap -m-4">
+                {projectsData.slice(0, MAX_DISPLAY).map((d) => (
+                  <Card
+                    key={d.title}
+                    title={d.title}
+                    description={d.description}
+                    imgSrc={d.imgSrc}
+                    href={d.href}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="flex justify-end text-base font-medium leading-6">
+              <Link
+                href="/projects"
+                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                aria-label="all projects"
+              >
+                All Projects &rarr;
+              </Link>
             </div>
           </div>
-        </div>
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/projects"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="all projects"
-          >
-            All Projects &rarr;
-          </Link>
         </div>
       </div>
       <div>
