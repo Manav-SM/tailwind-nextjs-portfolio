@@ -36,125 +36,6 @@ const Step = ({ title, children }) => {
   )
 }
 
-const FullTimeline = () => (
-  <>
-    <Divider />
-    <Year>2017</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2016</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2015</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2014</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2013</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2012</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2011</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2010</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2009</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2008</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2009</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>2008</Year>
-    <ul>
-      <Step title="Title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-        massa tincidunt nunc pulvinar.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>0001</Year>
-    <ul>
-      <Step title="The beginning of time">End of the BC and start of the AD</Step>
-    </ul>
-    <Divider />
-  </>
-)
-
 export default function Timeline() {
   const [isShowingFullTimeline, showFullTimeline] = useState(false)
 
@@ -199,26 +80,120 @@ export default function Timeline() {
           massa tincidunt nunc pulvinar.
         </Step>
       </ul>
-      {isShowingFullTimeline ? (
-        <FullTimeline />
-      ) : (
-        <button
-          type="button"
-          className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
-          onClick={() => showFullTimeline(true)}
-        >
-          See More
-          <svg
-            className="h-4 w-4 ml-1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-      )}
+      <Divider />
+      <Year>2017</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2016</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2015</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2014</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2013</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2012</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2011</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2010</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2009</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2008</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2009</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2008</Year>
+      <ul>
+        <Step title="Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+          massa tincidunt nunc pulvinar.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>0001</Year>
+      <ul>
+        <Step title="The beginning of time">End of the BC and start of the AD</Step>
+      </ul>
+      <Divider />
     </>
   )
 }

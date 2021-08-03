@@ -7,7 +7,8 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
-const MAX_DISPLAY = 4
+const MAX_PROJECT = 2
+const MAX_BLOG = 4
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -83,7 +84,7 @@ export default function Home({ posts }) {
 
             <div className="container py-12">
               <div className="flex flex-wrap -m-4">
-                {projectsData.slice(0, MAX_DISPLAY).map((d) => (
+                {projectsData.slice(0, MAX_PROJECT).map((d) => (
                   <Card
                     key={d.title}
                     title={d.title}
@@ -112,7 +113,7 @@ export default function Home({ posts }) {
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+          {posts.slice(0, MAX_BLOG).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
               <li key={slug} className="py-12">
@@ -162,7 +163,7 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {posts.length > MAX_BLOG && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
