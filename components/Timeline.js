@@ -39,6 +39,24 @@ const Step = ({ title, children }) => {
 const FullTimeline = () => (
   <>
     <Divider />
+    <Year>2017</Year>
+    <ul>
+      <Step title="Title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+        massa tincidunt nunc pulvinar.
+      </Step>
+    </ul>
+    <Divider />
+    <Year>2016</Year>
+    <ul>
+      <Step title="Title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
+        massa tincidunt nunc pulvinar.
+      </Step>
+    </ul>
+    <Divider />
     <Year>2015</Year>
     <ul>
       <Step title="Title">
@@ -173,24 +191,6 @@ export default function Timeline() {
       </ul>
       <Divider />
       <Year>2018</Year>
-      <ul>
-        <Step title="Title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-          massa tincidunt nunc pulvinar.
-        </Step>
-      </ul>
-      <Divider />
-      <Year>2017</Year>
-      <ul>
-        <Step title="Title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et. Imperdiet
-          massa tincidunt nunc pulvinar.
-        </Step>
-      </ul>
-      <Divider />
-      <Year>2016</Year>
       <ul>
         <Step title="Title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

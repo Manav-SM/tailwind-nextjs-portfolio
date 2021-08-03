@@ -20,9 +20,42 @@ export default function Home({ posts }) {
     <>
       <PageSeo title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <h2 className="font-extrabold sm:text-2xl md:text-2xl">Hi There!</h2>
         <p className="text-2xl font-extrabold text-lg leading-7 text-gray-500 dark:text-gray-400 ">
           <br />
-          Hi There
+          <br />
+          Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Vel elit
+          scelerisque mauris
+          <Link
+            href="/"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label={`Link`}
+          >
+            &nbsp; pellentesque pulvinar
+          </Link>{' '}
+          pellentesque habitant. Donec Donec pretium vulputate sapien nec sagittis aliquam
+          malesuada. Mauris pellentesque pellentesque{' '}
+          <Link
+            href="/"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label={`Link`}
+          >
+            {' '}
+            &nbsp; habitant morbi tristique.
+          </Link>{' '}
+          Turpis egestas maecenas pharetra convallis posuere.
+          <br />
+          <br />
+          Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Feugiat nibh sed pulvinar
+          proin gravida hendrerit. Egestas fringilla phasellus faucibus scelerisque eleifend donec
+          pretium{' '}
+          <Link
+            href="/"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label={`Link`}
+          >
+            &nbsp; vulputate. &rarr;{' '}
+          </Link>
           <br />
           <br />
           Check out my
