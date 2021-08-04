@@ -30,6 +30,12 @@ It is inspired by [Lee Robinson's blog](https://github.com/leerob/leerob.io) and
 - Timeline Page
 - SEO friendly with RSS feed, sitemaps and more!
 
+## Examples
+
+- [Demo Blog](https://tailwind-nextjs-starter-blog.vercel.app/)
+- [Author's personal blog](https://www.timlrx.com)
+- [My personal website](https://mnvsm.vercel.app/)
+
 ## Sample posts
 
 - [A markdown guide](https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide)
