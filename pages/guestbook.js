@@ -19,9 +19,7 @@ export default function Guestbook({ frontMatter }) {
             Leave a message or comment
           </p>
         </div>
-        <div className="container py-12">
-          <Comments />
-        </div>
+        <div className="container py-12"></div>
       </div>
     </>
   )
