@@ -30,6 +30,12 @@ It is inspired by [Lee Robinson's blog](https://github.com/leerob/leerob.io) and
 - Timeline Page
 - SEO friendly with RSS feed, sitemaps and more!
 
+## Examples
+
+- [Demo Blog](https://tailwind-nextjs-starter-blog.vercel.app/)
+- [Author's personal blog](https://www.timlrx.com)
+- [My personal website](https://mnvsm.vercel.app/)
+
 ## Sample posts
 
 - [A markdown guide](https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide)
@@ -85,7 +91,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 `components/MDXComponents.js` - pass your own JSX code or React component by specifying it over here. You can then call them directly in the `.mdx` or `.md` file. By default, a custom link and image component is passed.
 
-`components/timeline` - add and edit year and steps to modify your timeline
+`components/timeline.js` - add and edit year and steps to modify your timeline
 
 `layouts` - main templates used in pages.
 
