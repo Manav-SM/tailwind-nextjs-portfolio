@@ -15,15 +15,25 @@ export default function Footer() {
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
         </div>
         <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
-          <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          <div>{siteMetadata.author}</div>
         </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="/disclaimer"> Disclaimer </Link>
+        <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
+          <Link href="/">Home</Link>
+          <div>{` • `}</div>
+          <Link href="/about">About</Link>
+          <div>{` • `}</div>
+          <Link href="/blog">Blog</Link>
         </div>
+        <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
+          <Link href="/disclaimer">Disclaimer</Link>
+          <div>{` • `}</div>
+          <Link href="/projects">Projects</Link>
+          <div>{` • `}</div>
+          <Link href="/blog/tools-i-use">Tools I Use</Link>
+        </div>
+        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">{`  `}</div>
       </div>
     </footer>
   )

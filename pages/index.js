@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <PageSeo title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <h2 className="font-extrabold sm:text-2xl md:text-2xl">Hi There!</h2>
-        <p className="text-2xl font-extrabold text-lg leading-7 text-gray-500 dark:text-gray-400 ">
+        <p className="text-xl font-extralight text-lg leading-7 text-white-500 dark:text-white-400 ">
           <br />
           Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Vel elit
           scelerisque mauris
