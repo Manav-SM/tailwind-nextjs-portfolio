@@ -2,6 +2,7 @@ import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSeo } from '@/components/SEO'
 import Link from '@/components/Link'
+import Timeline from '@/components/Timeline'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
@@ -54,18 +55,10 @@ export default function AuthorLayout({ children, frontMatter }) {
               tools &rarr;
             </Link>{' '}
             I use daily
-            <br />
-            Check out my{' '}
-            <Link
-              href="/timeline"
-              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-              aria-label={`To Tools`}
-            >
-              timeline &rarr;
-            </Link>
           </div>
         </div>
       </div>
+      <Timeline />
     </>
   )
 }
