@@ -25,8 +25,6 @@ export default function Footer() {
           <Link href="/about">About</Link>
           <div>{` • `}</div>
           <Link href="/blog">Blog</Link>
-          <div>{` • `}</div>
-          <Link href="/guestbook">Guestbook</Link>
         </div>
         <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <Link href="/disclaimer">Disclaimer</Link>
