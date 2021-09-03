@@ -46,6 +46,13 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               />
             </svg>
           </div>
+          <Link
+            href="/tags"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="all tags"
+          >
+            All tags &rarr;
+          </Link>
         </div>
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
